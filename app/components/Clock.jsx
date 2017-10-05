@@ -5,10 +5,14 @@ var Clock = React.createClass ({
     getDefaultProps: function () {
         totalSeconds: 0
     },
+
     propTypes: {
         totalSeconds: React.PropTypes.number
+        // stating that totalseconds has to be a number
     },
 
+
+    // the below function is used to format the total seconds provided
     formatSeconds: function (totalSeconds) {
         var seconds = totalSeconds % 60;
         var minutes = Math.floor(totalSeconds / 60);
@@ -25,7 +29,6 @@ var Clock = React.createClass ({
     },
 
     render: function () {
-
         var {totalSeconds} = this.props;
 
         return (
