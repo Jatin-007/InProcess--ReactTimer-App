@@ -1,13 +1,13 @@
 var React = require ('react');
 
-var Timer = React.createClass ({
+var Controls = React.createClass ({
     render: function () {
         return (
             <div>
-                Timer Component
+                
             </div>
-        )
+        );
     }
 });
 
-module.exports = Timer;
+module.exports = Controls;
