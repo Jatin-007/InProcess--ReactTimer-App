@@ -1,23 +1,20 @@
-var webpack = require ('webpack');
-var path = require ('path');
+var webpack = require('webpack');
 
 module.exports = {
   entry: [
     'script!jquery/dist/jquery.min.js',
     'script!foundation-sites/dist/foundation.min.js',
-    './app/app.jsx',
+    './app/app.jsx'
   ],
   externals: {
     jquery: 'jQuery'
   },
-
   plugins: [
     new webpack.ProvidePlugin({
       '$': 'jquery',
       'jQuery': 'jquery'
     })
   ],
-
   output: {
     path: __dirname,
     filename: './public/bundle.js'
@@ -32,9 +29,8 @@ module.exports = {
       Countdown: 'app/components/Countdown.jsx',
       Clock: 'app/components/Clock.jsx',
       CountdownForm: 'app/components/CountdownForm.jsx',
-      Controls: 'app/components/Controls.jsx',
+      Controls: 'app/components/Controls.jsx'
     },
-
     extensions: ['', '.js', '.jsx']
   },
   module: {
