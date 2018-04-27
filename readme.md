@@ -1,1 +1,0 @@
-Boilerplate React.js
