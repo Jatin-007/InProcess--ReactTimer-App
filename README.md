@@ -1,4 +1,4 @@
-#React Timer and Countdown Application 
+## React Timer and Countdown Application 
 
 Created react timer and countdown application using React and Redux framework along with Mocha.js for testing components
 
